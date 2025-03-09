@@ -1,7 +1,17 @@
- body{
-   Background-image: url('https://i.pinimg.com/736x/c5/fe/24/c5fe2490256a203791b2edd403616fcf.jpg')no-repeat; 
-  Background-size: half;  
-  Background-position: Right;
+{
+    margin:0;
+    padding:0;
 
+
+
+ .main{
+       width: 100%;
+       background: linear gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(https://i.pinimg.com/736x/cb/54/a2/cb54a2c08582fb1d084edb08ee40b8e5.jpg) 
+       background-position: center;
+       background-size: cover;
+       height: 109vh;
+ }
+  
+  
 
 
