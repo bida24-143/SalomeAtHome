@@ -1,35 +1,82 @@
-{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-
-.main{
-    width: 100%
-     background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url('image.jpeg');
-     background-position: center;
-     background-size: cover;
-     height: 100vh;
+/* Body Styling */
+body {
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-.navbar{
-    width: 1200px;
-    height: 75px;
-    margin: auto;
+/* Header Styling */
+header {
+    background-color: #8B5E3B;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
-.icon{
-    width: 200px;
-    float: left;
-    height: 70px
+nav ul {
+    list-style: none;
+    padding: 10px;
 }
-.logo{
-    color: #00FFFF;
-    font-size: 35px;
-    font-family: Arial;
-    padding-left: 20px;
-    float: left;
-    
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #DED7C6;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    margin: 15px 0;
+    font-size: 1.2rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #8B5E3B;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #5a3c23;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #8B5E3B;
+    color: white;
+    margin-top: 20px;
 }
 
 
