@@ -1,4 +1,4 @@
-/* Reset Default Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,15 +6,15 @@
     font-family: 'Arial', sans-serif;
 }
 
-/* Body Styling */
+
 body {
     background-color: #f4f4f4;
     color: #333;
 }
 
-/* Header Styling */
+
 header {
-    background-color: #8B5E3B; /* Warm brown for elegance */
+    background-color: #8B5E3B;
     color: white;
     padding: 20px;
     text-align: center;
@@ -40,7 +40,7 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Hero Section with Background Image */
+
 .hero {
     text-align: center;
     padding: 100px 20px;
