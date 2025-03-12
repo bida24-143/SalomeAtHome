@@ -1,4 +1,43 @@
-
+ 
+        body {
+            background-color: beige; 
+            color: Crimson; 
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            background-color: beige; 
+            color: Crimson; 
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            margin: 0 10px;
+            color: Purple; 
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .contact-info {
+            text-align: center;
+            margin: 20px;
+        }
+        .contact-info p {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+        .icon {
+            margin-right: 8px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+    
 
 
  
