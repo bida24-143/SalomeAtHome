@@ -9,15 +9,40 @@
         body {
             background-color: beige; 
             color: Crimson; 
+            font-family: Arial, sans-serif;
         }
         h1 {
             background-color: beige; 
             color: Crimson; 
             text-align: center;
         }
+        nav {
+            text-align: center;
+            padding: 10px 0;
+        }
         nav a {
             margin: 0 10px;
             color: Purple; 
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .contact-info {
+            text-align: center;
+            margin: 20px;
+        }
+        .contact-info p {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+        .icon {
+            margin-right: 8px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -30,17 +55,16 @@
             <a href="contact.html">Contact</a>
         </nav>
     </header>
-    <main>
-        <p>If you'd like to get in touch, feel free to email me at <a href="mailto:SalomeAtHome@co.bw">SalomeAtHome@co.bw</a></p>
+    <main class="contact-info">
+        <p><img src="https://via.placeholder.com/16x16?text=📧" alt="Mail Icon" class="icon">Email: <a href="mailto:SalomeAtHome@co.bw">SalomeAtHome@co.bw</a></p>
         <p>Salome At Home</p>
         <p>Private bag 1076, Old Naledi Road, Gaborone</p>
         <br>
-        <p>CONTACT US!!</p>
-        <p>TEL: +267 826 941</p>
-        <p>FAX: +267 826 940</p>
+        <p><img src="https://via.placeholder.com/16x16?text=📞" alt="Phone Icon" class="icon">Tel: +267 826 941</p>
+        <p><img src="https://via.placeholder.com/16x16?text=📠" alt="Fax Icon" class="icon">Fax: +267 826 940</p>
     </main>
     <footer>
+        <p>&copy; 2025 Salome At Home</p>
     </footer>
 </body>
 </html>
-
