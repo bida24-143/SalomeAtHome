@@ -3,31 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salome At Home - Home</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>WELCOME!!</title>
+    <style>
+        body {
+            background-color: lavender;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 15px 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: darkblue;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: crimson;
+        }
+
+        
+        .search-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-container input {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+            width: 200px;
+        }
+
+        .search-container button {
+            padding: 8px 12px;
+            border: none;
+            background-color: crimson;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+
+        .search-container button:hover {
+            background-color: darkred;
+        }
+
+        /* Main Content */
+        .content {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        h1 {
+            color: crimson;
+            font-family: cursive;
+        }
+
+        h3 {
+            font-family: cursive;
+        }
+    </style>
 </head>
 <body>
-    <header>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-    </header>
 
-    <main>
-        <section class="hero">
-            <img src="https://i.pinimg.com/474x/a2/51/24/a251247cff2ea1345c57421970337920.jpg" alt="Furniture Inspiration" />
-            <h1>Welcome to Salome At Home</h1>
-            <p>Your one-stop shop for beautiful and elegant furniture.</p>
-        </section>
-    </main>
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+    </div>
 
-    <footer>
-        <p>&copy; 2025 Salome At Home. All rights reserved.</p>
-    </footer>
+    <!-- Main Content -->
+    <div class="content">
+        <h1>Salome At Home</h1>
+        <h3>Where your heart is!!</h3>
+        <p>Find the best quality furniture that best suits your style and makes your house feel like home.</p>
+    </div>
+
 </body>
 </html>
 
