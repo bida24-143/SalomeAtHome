@@ -5,7 +5,6 @@
             padding: 0;
         }
 
-        /* Navigation Bar */
         .navbar {
             display: flex;
             justify-content: space-between;
@@ -15,7 +14,6 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        /* Navigation Links */
         .nav-links {
             list-style: none;
             padding: 0;
@@ -35,7 +33,7 @@
             color: crimson;
         }
 
-        /* Search Bar */
+      
         .search-container {
             display: flex;
             align-items: center;
@@ -63,7 +61,7 @@
             background-color: darkred;
         }
 
-        /* Main Content */
+      
         .content {
             text-align: center;
             margin-top: 50px;
@@ -76,7 +74,21 @@
 
         h3 {
             font-family: cursive;
-        }
+        } 
+       
+
+
+    <div class="navbar">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+      
+
  
 
 
