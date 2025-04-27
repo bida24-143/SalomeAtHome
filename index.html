@@ -1,76 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Salome At Home</title>
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    body {
-      background-color: lavender;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-
-    h1 {
-      margin-top: 40px;
-      color: crimson;
-      font-family: cursive;
-    }
-
-    .product-gallery {
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-      flex-wrap: wrap;
-      margin: 50px auto;
-      padding: 0 20px;
-    }
-
-    .product-bubble {
-      text-decoration: none;
-      color: darkblue;
-      transition: transform 0.3s;
-    }
-
-    .product-bubble img {
-      width: 180px;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 4px solid crimson;
-      transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
-    }
-
-    .product-bubble p {
-      margin-top: 10px;
-      font-weight: bold;
-      font-family: cursive;
-    }
-
-    .product-bubble:hover img {
-      animation: bounce 0.6s;
-      border-color: darkred;
-      box-shadow: 0 10px 20px rgba(220, 20, 60, 0.4);
-    }
-
-    .product-bubble:hover p {
-      color: crimson;
-    }
-
-    @keyframes bounce {
-      0%   { transform: scale(1); }
-      30%  { transform: scale(1.2); }
-      50%  { transform: scale(0.95); }
-      70%  { transform: scale(1.05); }
-      100% { transform: scale(1); }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WELCOME!!</title>
+ <link rel="stylesheet" href="styles.css"> 
+    
 </head>
 <body>
-  <div class="navbar">
+      <style>
+        body {
+            background-color: lavender;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 15px 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: darkblue;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: crimson;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-container input {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+            width: 200px;
+        }
+
+        .search-container button {
+            padding: 8px 12px;
+            border: none;
+            background-color: crimson;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+
+        .search-container button:hover {
+            background-color: darkred;
+        }
+
+        .content {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        h1 {
+            color: crimson;
+            font-family: cursive;
+        }
+
+        h3 {
+            font-family: cursive;
+        }
+
+        footer {
+            background-color: beige;
+            padding: 60px;
+            text-align: center;
+            color: crimson;
+        }
+          </style>
+
+    <div class="navbar">
         <nav>
             <ul class="nav-links">
                 <li><a href="home.html">Home</a></li>
@@ -84,33 +107,18 @@
             <input type="text" placeholder="Search...">
             <button>Search</button>
         </div>
+    </div>
     <div class="content">
         <h1>Salome At Home</h1>
         <h3>Where your heart is!!</h3>
         <p>Find the best quality furniture that best suits your style and makes your house feel like home.</p>
+    <img src="https://i.pinimg.com/474x/8e/ef/20/8eef20879d97838ee59d83251e80dcbc.jpg" alt="Elegant Furniture">
+        <img src="https://i.pinimg.com/474x/67/54/d1/6754d124969e84a81b4c36a1fef893bd.jpg" alt="Elegant Furniture">
+        <img src="https://i.pinimg.com/474x/e0/06/3b/e0063b4b849e53e98e4fed6968567588.jpg" alt=Elegant Furniture">
+        <img src="https://i.pinimg.com/474x/46/d8/b0/46d8b0d60d5d6db54328aac07e719dc7.jpg" alt=Elegant Furniture">
 
     </div>
-
-</body>
-    <footer>
-         <main class="contact-info">
-          <p>Email: <a href="mailto:SalomeAtHome@co.bw">SalomeAtHome@co.bw</a></p
-        <p>Salome At Home</p>
-        <p>Private bag 1076, Old Naledi Road, Gaborone</p>
-        <br>
-        <p>Tel: +267 826 941</p>
-        <p>Fax: +267 826 940</p>
-    </main>
-    <footer> 
-        <p>&copy; 2025 Salome At Home</p>
-        <p>Follow us: 
-            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i> Salome At Home</a> | 
-            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i>SalomeATHome</a> | 
-            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i>Salome_At_Home</a> 
-    </footer>
-  
-
-<h1>Our Favorite Picks ✨</h1>
+  <h1>Our Favorite Picks ✨</h1>
 
 <div class="product-gallery">
   <a href="product1.html" class="product-bubble">
@@ -130,6 +138,27 @@
     <p>Luxury Armchair</p>
   </a>
 </div>
+</body>
+
+    <footer>
+         <main class="contact-info">
+          <p>Email: <a href="mailto:SalomeAtHome@co.bw">SalomeAtHome@co.bw</a></p
+        <p>Salome At Home</p>
+        <p>Private bag 1076, Old Naledi Road, Gaborone</p>
+        <br>
+        <p>Tel: +267 826 941</p>
+        <p>Fax: +267 826 940</p>
+    </main>
+    <footer> 
+        <p>&copy; 2025 Salome At Home</p>
+        <p>Follow us: 
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i> Salome At Home</a> | 
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i>SalomeATHome</a> | 
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i>Salome_At_Home</a> 
+    </footer>
+
+
+
 
 </body>
 </html>
