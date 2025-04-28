@@ -83,14 +83,65 @@
             font-family: cursive;
         }
 
+        .product-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .product-bubble {
+            display: block;
+            width: 250px;
+            height: 250px;
+            overflow: hidden;
+            border-radius: 50%;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transition: transform 0.5s, box-shadow 0.5s;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .product-bubble img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .product-bubble:hover {
+            transform: scale(1.1);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
         footer {
             background-color: beige;
             padding: 60px;
             text-align: center;
             color: crimson;
+            margin-top: 50px;
+        }
+
+        footer a {
+            color: crimson;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
+
 <body>
 
     <div class="navbar">
@@ -113,14 +164,24 @@
         <h1>Salome At Home</h1>
         <h3>Where your heart is!!</h3>
         <p>Find the best quality furniture that best suits your style and makes your house feel like home.</p>
-        
-        <a href="product1.html" class="product-bubble">
-            <img src="https://i.pinimg.com/474x/8e/ef/20/8eef20879d97838ee59d83251e80dcbc.jpg" alt="Elegant Furniture">
-        </a>
 
-        <img src="https://i.pinimg.com/474x/67/54/d1/6754d124969e84a81b4c36a1fef893bd.jpg" alt="Elegant Furniture">
-        <img src="https://i.pinimg.com/474x/e0/06/3b/e0063b4b849e53e98e4fed6968567588.jpg" alt="Elegant Furniture">
-        <img src="https://i.pinimg.com/474x/46/d8/b0/46d8b0d60d5d6db54328aac07e719dc7.jpg" alt="Elegant Furniture">
+        <div class="product-gallery">
+            <a href="product1.html" class="product-bubble">
+                <img src="https://i.pinimg.com/474x/8e/ef/20/8eef20879d97838ee59d83251e80dcbc.jpg" alt="Modern beige sofa with pillows">
+            </a>
+
+            <a href="product2.html" class="product-bubble">
+                <img src="https://i.pinimg.com/474x/67/54/d1/6754d124969e84a81b4c36a1fef893bd.jpg" alt="Elegant wooden dining table">
+            </a>
+
+            <a href="product3.html" class="product-bubble">
+                <img src="https://i.pinimg.com/474x/e0/06/3b/e0063b4b849e53e98e4fed6968567588.jpg" alt="Stylish grey couch">
+            </a>
+
+            <a href="product4.html" class="product-bubble">
+                <img src="https://i.pinimg.com/474x/46/d8/b0/46d8b0d60d5d6db54328aac07e719dc7.jpg" alt="Classic wooden coffee table">
+            </a>
+        </div>
     </div>
 
     <footer>
