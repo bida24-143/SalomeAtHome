@@ -6,14 +6,85 @@
     <title>Curtains</title>
     <link rel="stylesheet" href="styles.css"> 
     <style>
-        
+    
         body {
             background-color: lavender;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
         }
-          display: flex;
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 15px 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: darkblue;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: crimson;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-container input {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+            width: 200px;
+        }
+
+        .search-container button {
+            padding: 8px 12px;
+            border: none;
+            background-color: crimson;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+
+        .search-container button:hover {
+            background-color: darkred;
+        }
+
+        .content {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        h1 {
+            color: crimson;
+            font-family: cursive;
+        }
+
+        h3 {
+            font-family: cursive;
+        }
+
+        .product-gallery {
+            display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 20px;
@@ -70,8 +141,9 @@
         }
     </style>
 </head>
-   
+
 <body>
+
     <div class="navbar">
         <nav>
             <ul class="nav-links">
@@ -81,29 +153,33 @@
                 <li><a href="feedback.html">Feedback Page</a></li>
             </ul>
         </nav>
+
         <div class="search-container">
             <input type="text" placeholder="Search...">
             <button>Search</button>
         </div>
-    </div>
+    </div>   
 
     <div class="content">
         <h2>Long Curtains</h2>
         <div class="product-gallery">
-            <div class="product-bubble">
+            <a href="product1.html" class="product-bubble">
                 <img src="https://i.pinimg.com/736x/fa/56/6f/fa566f333a24f876526548faad32d08f.jpg" alt="Long curtain 1">
             </div>
-            <div class="product-bubble">
+            <div class="product-gallery">
+            <a href="product2.html" class="product-bubble">
                 <img src="https://i.pinimg.com/736x/9d/6d/d1/9d6dd169c8356edd0be01828cd462370.jpg" alt="Long curtain 2">
             </div>
         </div>
 
         <h2>Short Curtains</h2>
-        <div class="product-gallery">
-            <div class="product-bubble">
+       
+           <div class="product-gallery">
+            <a href="product3.html" class="product-bubble">
                 <img src="https://i.pinimg.com/736x/9d/4a/e1/9d4ae1541fe4960d96f0151c445d6b5e.jpg" alt="Short curtain 1">
             </div>
-            <div class="product-bubble">
+        <div class="product-gallery">
+            <a href="product4.html" class="product-bubble">
                 <img src="https://i.pinimg.com/736x/94/97/f7/9497f7866d3f9dd27f63e984854ae668.jpg" alt="Short curtain 2">
             </div>
         </div>
