@@ -1,175 +1,79 @@
+<!-- product1.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product 1 - Sofa Color Trends</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product - Salome At Home</title>
   <style>
     body {
-      font-family: 'Helvetica Neue', sans-serif;
-      margin: 0;
+      font-family: Arial, sans-serif;
+      padding: 30px;
       background-color: #f8f8f8;
-      color: #222;
     }
-
-    header {
-      text-align: center;
-      padding: 60px 20px 20px;
-    }
-
-    header h2 {
-      font-weight: 300;
-      letter-spacing: 3px;
-      color: #aaa;
-      margin-bottom: 10px;
-    }
-
-    header h1 {
-      font-size: 36px;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 14px;
-      color: #666;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 30px;
-      padding: 40px;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    .card {
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-      background: white;
-    }
-
-    .card-image {
-      height: 220px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .card-image img {
-      max-height: 100%;
-      max-width: 100%;
-      object-fit: cover;
-    }
-
-    .card-text {
-      padding: 20px;
+    .product {
       text-align: center;
     }
-
-    .card-text h4 {
-      margin: 0;
-      font-size: 18px;
-      font-weight: bold;
+    img {
+      width: 300px;
+      border-radius: 10px;
+      margin-bottom: 20px;
     }
-
-    .card-text p {
-      font-size: 13px;
-      color: #777;
-      margin: 5px 0 10px;
+    h2 {
+      margin-bottom: 10px;
     }
-
-    .card-text .plus {
-      font-size: 24px;
-      color: #ccc;
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: crimson;
+      color: white;
+      cursor: pointer;
     }
-
-    /* Individual background colors */
-    .cobalt-blue    { background-color: #1b4c6b; }
-    .blue-bell      { background-color: #b0d5e5; }
-    .golden-lime    { background-color: #b4a041; }
-    .ballet-slipper { background-color: #efb6a4; }
-    .neutral-gray   { background-color: #d6d6d6; }
-    .lemon-curry    { background-color: #deb12a; }
+    button:hover {
+      background-color: darkred;
+    }
   </style>
 </head>
 <body>
-
-  <header>
-    <h2>2017 F/W</h2>
-    <h1>COLOR TRENDS on SOFA</h1>
-    <p>당신의 소파는 어떤 계절인가요</p>
-  </header>
-
-  <div class="grid">
-    <div class="card">
-      <div class="card-image cobalt-blue">
-        <img src="https://i.pinimg.com/564x/7f/d5/13/7fd513dfc86f19f6b2dc4b57d10e3e0b.jpg" alt="Cobalt Blue Sofa">
-      </div>
-      <div class="card-text">
-        <h4>COBALT BLUE</h4>
-        <p>도도한 3인용 소파</p>
-        <div class="plus">+</div>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-image blue-bell">
-        <img src="https://i.pinimg.com/564x/63/f0/15/63f015bf70ff53cf1100de3c9c689d62.jpg" alt="Blue Bell Sofa">
-      </div>
-      <div class="card-text">
-        <h4>BLUE BELL</h4>
-        <p>북유럽가구 패브릭 소파</p>
-        <div class="plus">+</div>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-image golden-lime">
-        <img src="https://i.pinimg.com/564x/e0/2f/2e/e02f2e65c0f7aa8d131e50822adfb885.jpg" alt="Golden Lime Sofa">
-      </div>
-      <div class="card-text">
-        <h4>GOLDEN LIME</h4>
-        <p>패브릭 3인용 소파</p>
-        <div class="plus">+</div>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-image ballet-slipper">
-        <img src="https://i.pinimg.com/564x/85/51/7f/85517f3253d726fa2184f210e6a0a7b9.jpg" alt="Ballet Slipper Chair">
-      </div>
-      <div class="card-text">
-        <h4>BALLET SLIPPER</h4>
-        <p>로맨틱 라운지 체어</p>
-        <div class="plus">+</div>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-image neutral-gray">
-        <img src="https://i.pinimg.com/564x/02/8d/e2/028de244805f91faad7c9297cb0b44ae.jpg" alt="Neutral Gray Sofa">
-      </div>
-      <div class="card-text">
-        <h4>NEUTRAL GRAY</h4>
-        <p>두닷모노 데니 소파</p>
-        <div class="plus">+</div>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-image lemon-curry">
-        <img src="https://i.pinimg.com/564x/79/49/45/794945fdc8e27c89fd7dc7f12407f88f.jpg" alt="Lemon Curry Sofa">
-      </div>
-      <div class="card-text">
-        <h4>LEMON CURRY</h4>
-        <p>프리미엄 소파 2인용</p>
-        <div class="plus">+</div>
-      </div>
-    </div>
+  <div class="product">
+    <img src="https://i.pinimg.com/474x/42/34/4d/42344d158794c355a5cfca1c764abb85.jpg" alt="Elegant Sofa"/>
+    <h2>Elegant Beige Sofa</h2>
+    <p>P2000</p>
+    <button onclick="addToCart()">Add to Cart</button>
+    <button onclick="orderNow()">Order Now</button>
   </div>
 
+  <script>
+    function addToCart() {
+      const product = {
+        name: "Elegant Beige Sofa",
+        price: 2000,
+        image: "https://i.pinimg.com/474x/42/34/4d/42344d158794c355a5cfca1c764abb85.jpg"
+      };
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+      cart.push(product);
+      localStorage.setItem('cart', JSON.stringify(cart));
+      window.location.href = "added.html";
+    }
+
+    function orderNow() {
+      addToCart();
+      window.location.href = "order.html";
+    }
+  </script>
 </body>
 </html>
+
+ 
+  
+
+   
+  
+      
+       
+     
+   
+  
+ 
