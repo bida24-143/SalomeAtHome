@@ -1,21 +1,16 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
 <head>
-<link rel="stylesheet" href="styles.css"> 
-<form action="action_page.php"> 
-  <label for="rating">How would you rate your experience?</label><br>
-    <select id="rating" name="rating">
-        <option value="5">⭐️⭐️⭐️⭐️⭐️ Excellent</option>
-        <option value="4">⭐️⭐️⭐️⭐️ Good</option>
-        <option value="3">⭐️⭐️⭐️ Okay</option>
-        <option value="2">⭐️⭐️ Needs Improvement</option>
-        <option value="1">⭐️ Poor</option>
-    </select><br>
-    
-    <label for="comments">Additional Comments:</label><br>
-    <textarea id="comments" name="comments" rows="4" placeholder="Share your thoughts..."></textarea><br>
-    
-<input type="submit" value="Submit"> 
-</form>
-</head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Feedback</title>
+
+
   <style>
         body {
             background-color: lavender;
@@ -121,7 +116,23 @@ button {
 }
 
           </style>
-
+</head>
+  <link rel="stylesheet" href="styles.css"> 
+<form action="action_page.php"> 
+  <label for="rating">How would you rate your experience?</label><br>
+    <select id="rating" name="rating">
+        <option value="5">⭐️⭐️⭐️⭐️⭐️ Excellent</option>
+        <option value="4">⭐️⭐️⭐️⭐️ Good</option>
+        <option value="3">⭐️⭐️⭐️ Okay</option>
+        <option value="2">⭐️⭐️ Needs Improvement</option>
+        <option value="1">⭐️ Poor</option>
+    </select><br>
+    
+    <label for="comments">Additional Comments:</label><br>
+    <textarea id="comments" name="comments" rows="4" placeholder="Share your thoughts..."></textarea><br>
+    
+<input type="submit" value="Submit"> 
+  
     <div class="navbar">
         <nav>
             <ul class="nav-links">
@@ -131,5 +142,25 @@ button {
                 <li><a href="feedback.html">Feedback Page</a></li>
             </ul>
         </nav>
+         <footer>
+        <main class="contact-info">
+            <p>Email: <a href="mailto:SalomeAtHome@co.bw">SalomeAtHome@co.bw</a></p>
+            <p>Salome At Home</p>
+            <p>Private Bag 1076, Old Naledi Road, Gaborone</p>
+            <br>
+            <p>Tel: +267 826 941</p>
+            <p>Fax: +267 826 940</p>
+        </main>
+
+        <p>&copy; 2025 Salome At Home</p>
+        <p>Follow us: 
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i> Salome At Home</a> | 
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i> SalomeATHome</a> | 
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i> Salome_At_Home</a>
+        </p>
+    </footer>
 
 </body>
+    </div>
+</form>
+</html>
