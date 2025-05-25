@@ -1,166 +1,149 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Feedback</title>
-
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Feedback | Salome At Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <style>
-        body {
-            background-color: lavender;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-          text-align:center;
-        }
+    body {
+      background-color: lavender;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
 
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: white;
-            padding: 15px 30px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+      padding: 15px 30px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
 
-        .nav-links {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            gap: 20px;
-        }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+    }
 
-        .nav-links a {
-            text-decoration: none;
-            color: darkblue;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
+    .nav-links a {
+      text-decoration: none;
+      color: darkblue;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
 
-        .nav-links a:hover {
-            color: crimson;
-        }
+    .nav-links a:hover {
+      color: crimson;
+    }
 
-        .search-container {
-            display: flex;
-            align-items: center;
-        }
+    .content {
+      max-width: 500px;
+      margin: 50px auto;
+      background: #f9f9f9;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
 
-        .search-container input {
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            outline: none;
-            width: 200px;
-        }
+    h1 {
+      color: crimson;
+      font-family: cursive;
+    }
 
-        .search-container button {
-            padding: 8px 12px;
-            border: none;
-            background-color: crimson;
-            color: white;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-left: 5px;
-        }
+    select, textarea, input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      margin: 15px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
 
-        .search-container button:hover {
-            background-color: darkred;
-        }
+    input[type="submit"] {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
 
-        .content {
-            text-align: center;
-            margin-top: 50px;
-        }
+    input[type="submit"]:hover {
+      background-color: darkblue;
+    }
 
-        h1 {
-            color: crimson;
-            font-family: cursive;
-        }
+    footer {
+      background-color: beige;
+      padding: 40px;
+      color: crimson;
+      text-align: center;
+      margin-top: 50px;
+    }
 
-        h3 {
-            font-family: cursive;
-        }
+    footer a {
+      color: crimson;
+      text-decoration: none;
+      margin: 0 5px;
+    }
 
-        footer {
-            background-color: beige;
-            padding: 60px;
-            text-align: center;
-            color: crimson;
-        }
-    form {
-    max-width: 500px;
-    margin: auto;
-    padding: 20px;
-    border-radius: 8px;
-    background: #f9f9f9;
-}
-input, select, textarea {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-}
-button {
-    background: #007BFF;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-}
-
-          </style>
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
-  <link rel="stylesheet" href="styles.css"> 
-<form action="action_page.php"> 
-  <label for="rating">How would you rate your experience?</label><br>
-    <select id="rating" name="rating">
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <nav>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Feedback Form -->
+  <div class="content">
+    <h1>We value your feedback!</h1>
+    <form action="thank-you.html" method="post">
+      <label for="rating">How would you rate your experience?</label><br>
+      <select id="rating" name="rating" required>
         <option value="5">⭐️⭐️⭐️⭐️⭐️ Excellent</option>
         <option value="4">⭐️⭐️⭐️⭐️ Good</option>
         <option value="3">⭐️⭐️⭐️ Okay</option>
         <option value="2">⭐️⭐️ Needs Improvement</option>
         <option value="1">⭐️ Poor</option>
-    </select><br>
-    
-    <label for="comments">Additional Comments:</label><br>
-    <textarea id="comments" name="comments" rows="4" placeholder="Share your thoughts..."></textarea><br>
-    
-<input type="submit" value="Submit"> 
-  
-    <div class="navbar">
-        <nav>
-            <ul class="nav-links">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="feedback.html">Feedback Page</a></li>
-            </ul>
-        </nav>
-         <footer>
-        <main class="contact-info">
-            <p>Email: <a href="mailto:SalomeAtHome@co.bw">SalomeAtHome@co.bw</a></p>
-            <p>Salome At Home</p>
-            <p>Private Bag 1076, Old Naledi Road, Gaborone</p>
-            <br>
-            <p>Tel: +267 826 941</p>
-            <p>Fax: +267 826 940</p>
-        </main>
+      </select><br>
 
-        <p>&copy; 2025 Salome At Home</p>
-        <p>Follow us: 
-            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i> Salome At Home</a> | 
-            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i> SalomeATHome</a> | 
-            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i> Salome_At_Home</a>
-        </p>
-    </footer>
+      <label for="comments">Additional Comments:</label><br>
+      <textarea id="comments" name="comments" rows="4" placeholder="Share your thoughts..."></textarea><br>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <main class="contact-info">
+      <p>Email: <a href="mailto:SalomeAtHome@co.bw">SalomeAtHome@co.bw</a></p>
+      <p>Salome At Home</p>
+      <p>Private Bag 1076, Old Naledi Road, Gaborone</p>
+      <p>Tel: +267 826 941 | Fax: +267 826 940</p>
+    </main>
+    <p>&copy; 2025 Salome At Home</p>
+    <p>Follow us: 
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i> Salome At Home</a> | 
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i> SalomeATHome</a> | 
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i> Salome_At_Home</a>
+    </p>
+  </footer>
 
 </body>
-    </div>
-</form>
 </html>
