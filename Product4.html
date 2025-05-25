@@ -1,1 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kitchen ware - Salome at Home</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      background-color: lavender;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: crimson;
+      padding: 15px 30px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: darkblue;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: crimson;
+    }
+
+    .search-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .search-container input {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 200px;
+    }
+
+    .search-container button {
+      padding: 8px 12px;
+      border: none;
+      background-color: blue;
+      color: white;
+      border-radius: 5px;
+      margin-left: 5px;
+      cursor: pointer;
+    }
+
+    .search-container button:hover {
+      background-color: darkred;
+    }
+
+    .content {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    h1, h2, h3 {
+      font-family: cursive;
+      color: crimson;
+    }
+
+    .product-container {
+      max-width: 1000px;
+      margin: auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .product-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .product-item {
+      text-align: center;
+    }
+
+    .product-gallery img {
+      width: 200px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .buttons {
+      margin-top: 10px;
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      background-color: #8B0000;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #a80000;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <nav>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="feedback.html">Feedback Page</a></li>
+      </ul>
+    </nav>
+    <div class="search-container">
+      <input type="text" placeholder="Search...">
+      <button>Search</button>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="product-container">
+      <h1>Elegant Curtains - Product Gallery</h1>
+
+      <h2>Islands</h2>
+      <div class="product-gallery">
+        <div class="product-item">
+          <img src="https://i.pinimg.com/736x/b4/fa/0c/b4fa0c0d15893f2c99544ab2ebb81f27.jpg" alt="Long Curtain 1">
+          <div class="buttons">
+            <button onclick="addToCart()">Add to Cart</button>
+            <button onclick="orderNow()">Order Now</button>
+          </div>
+        </div>
+
+        <div class="product-item">
+          <img src="https://i.pinimg.com/736x/23/21/16/232116dd1534b14b15a32fd66e6aa07d.jpg" alt="Long Curtain 2">
+          <div class="buttons">
+            <button onclick="addToCart()">Add to Cart</button>
+            <button onclick="orderNow()">Order Now</button>
+          </div>
+        </div>
+      </div>
+
+      <h2></h2>
+      <div class="product-gallery">
+        <div class="product-item">
+          <img src="https://i.pinimg.com/736x/b0/24/cf/b024cf97625c694ec8317ab8c1016c2f.jpg" alt="Short Curtain 1">
+          <div class="buttons">
+            <button onclick="addToCart()">Add to Cart</button>
+            <button onclick="orderNow()">Order Now</button>
+          </div>
+        </div>
+
+        <div class="product-item">
+          <img src="https://i.pinimg.com/736x/a7/5c/a0/a75ca0d6869f3c435ab8d404a7267e26.jpg" alt="Short Curtain 2">
+          <div class="buttons">
+            <button onclick="addToCart()">Add to Cart</button>
+            <button onclick="orderNow()">Order Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function addToCart() {
+      alert("Item added to cart successfully!");
+      window.location.href = "cart.html";
+    }
+
+    function orderNow() {
+      window.location.href = "order-confirmation.html";
+    }
+  </script>
+</body>
+</html>
+
+ 
+
+ 
+   
+    
+       
+   
+
+
+         
+       
+     
+    
+      
+           
+           
+         
+     
+
+       
+
+      
+        
+      
+
+
+
 
